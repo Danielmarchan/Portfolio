@@ -1,0 +1,22 @@
+.logo {
+    display: inline-block;
+    font-size: 2em;
+}
+#Section-1 .pad90 {
+    padding-bottom: 90px;
+}
+.education h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.soft-skills {
+    margin-top: 120px;
+}
+
+.education {
+    background: #fff;
+}
+.mx-auto {
+    margin: 0 auto;
+}
