@@ -111,7 +111,7 @@ blockquote p {
    
 }
 
-blockquote .author {
+.author {
   margin: 0 0 20px;
   font-weight: bold;
   font-size: 1em;
@@ -1901,11 +1901,12 @@ html[style*='margin-right'] .main-nav {
   right: 0;
 }
 
-.owl-unica.testimonials {
+.owl-unica.testimonials, .testimonials {
   margin: 0;
+  text-align: center;
 }
 
-.owl-unica.testimonials blockquote {
+.owl-unica.testimonials blockquote, .testimonials {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
