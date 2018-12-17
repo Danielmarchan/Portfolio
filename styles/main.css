@@ -2524,7 +2524,8 @@ form .message {
 }
 
 .mfp-wrap.unica .mfp-arrow-left:after {
-  content: '<';
+  content: "<";
+  font-size: 1.7em;
   font-weight: 600;
 }
 
@@ -2545,6 +2546,7 @@ form .message {
 
 .mfp-wrap.unica .mfp-arrow-right:after {
   content: '>';
+  font-size: 1.7em;
   font-weight: 600;
 }
 
