@@ -174,7 +174,13 @@ hr {
   border-bottom: 4px double;
   color: #000;
 }
-
+.demo-login {
+  text-align: left;
+}
+.modal-image {
+  width: 100%;
+  object-fit: contain;
+}
 .section-bg-dark hr,
 .section-bg-overlay hr,
 .section-bg-img-dark hr {
@@ -191,6 +197,20 @@ hr {
 
 .content-box-light hr {
   color: #000000;
+}
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
 }
 
 sup {
