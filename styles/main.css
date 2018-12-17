@@ -636,7 +636,7 @@ a.alignright {
   right: 0;
   bottom: 0;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: top;
   background-size: cover;
   z-index: 4;
 }
@@ -1022,6 +1022,11 @@ html[style*='margin-right'] .main-nav {
   white-space: nowrap;
   letter-spacing: 2px;
   cursor: pointer;
+  margin: 5px;
+}
+
+#about .btn {
+  margin: 0;
 }
 
 .btn:hover {
@@ -2387,6 +2392,10 @@ form .message {
   padding: 30px;
 }
 
+.popup-inner h3 {
+  font-weight: 600!important;
+}
+
 .mfp-bg.unica {
   background: #000;
   opacity: 0;
@@ -2515,7 +2524,8 @@ form .message {
 }
 
 .mfp-wrap.unica .mfp-arrow-left:after {
-  content: '';
+  content: '<';
+  font-weight: 600;
 }
 
 .mfp-wrap.unica.mfp-ready .mfp-arrow-left {
@@ -2534,7 +2544,8 @@ form .message {
 }
 
 .mfp-wrap.unica .mfp-arrow-right:after {
-  content: '';
+  content: '>';
+  font-weight: 600;
 }
 
 .mfp-wrap.unica.mfp-ready .mfp-arrow-right {
