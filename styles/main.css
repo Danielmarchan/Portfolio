@@ -3149,3 +3149,15 @@ svg#arrow-down {
 #intro .section-inner {
     padding-bottom: 0;
 }
+
+@media (max-width: 767px) {
+  svg#arrow-down {
+      width: 35px;
+      margin-top: 35px;
+  }
+  ul.filter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
