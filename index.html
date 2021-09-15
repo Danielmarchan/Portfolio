@@ -24,10 +24,10 @@
   <link rel="stylesheet" href="styles/normalize.css">
 
   <!-- Magnific Popup-->
-  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.min.css">
 
   <!-- Owl carousel-->
-  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
 
   <!-- Font Awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -52,7 +52,7 @@
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#projects">Latest Work</a></li>
           <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="index.html#expirience">Experience</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
           <li><a href="index.html#testimonials">Testimonials</a></li>
           <li><a href="index.html#contacts">Contact Me</a></li>
         </ul>
@@ -138,17 +138,47 @@
 
           <ul class="filter">
             <li data-group="all" class="active">All</li>
+            <li data-group="vuejs">VueJS</li>
             <li data-group="reactjs">ReactJS</li>
             <li data-group="nodejs">NodeJs</li>
           </ul>
 
           <ul class="works">
-            <li data-groups="[&quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-1" class="works-item-link"><span class="works-item-thumb"><img src="images/clocker.png" width="250" height="250" alt="Clocker"></span></a>
+            <li data-groups="[&quot;vuejs&quot;]" class="works-item"><a href="#works-item-details-1" class="works-item-link"><span class="works-item-thumb"><img src="images/protect.png" width="250" height="250" alt="Protect"></span></a>
               <div id="works-item-details-1" class="popup mfp-hide">
+                <figure><img src="images/protect-wide.jpeg" class="modal-image" alt="Protect"></figure>
+                <div class="popup-inner">
+                  <h3>Protect.com, a multi-vertical content websites, built with VueJS</h3>
+                  <p>Protect.com is a multi-vertical website I built with my team in <a href="https://digitalmediasolutions.com/" target="_blank">Digital Media Solutions</a>. This site is meant to be a hub for people to find offers that would interest them in a variety of vertical such as insurance.</p>
+                  <p>The site was built using VueJS and contains a <a href="https://auto.protect.com/articles/">blog</a> that integrates with a headless CMS that uses a GraphQL API to serve all of the articles with their respective content.</p>
+                  <p>Some of the key features of this project include:</p>
+                  <ul>
+                    <li>A complete website with a homepage, compliance pages (Privacy, Terms, etc.), landing pages, click feeds and a blog.</li>
+                    <li>A blog feed with search functionality and pagination.</li>
+                    <li>A "Mega Menu" style header menu.</li>
+                    <li>A blog that connects to a headless CMS using a GraphQL API (<a href="https://graphcms.com/">GraphCMS</a>)</li>
+                    <li>Site is fully responsive and implements a beautiful modern design.</li>
+                  </ul>
+                  <p>Notable pages:</p>
+                  <ul>
+                    <li><a href="https://auto.protect.com/" target="_blank">Homepage</a></li>
+                    <li><a href="https://auto.protect.com/articles/" target="_blank">Articles Feed</a></li>
+                    <li><a href="https://auto.protect.com/article/cheaper-car-insurance-quotes" target="_blank">Article Page</a></li>
+                    <li><a href="https://auto.protect.com/insurance/auto-insurance/results" target="_blank">Click Feed Offers Page</a></li>
+                    <li><a href="https://auto.protect.com/insurance/" target="_blank">Vertical Landing Page</a></li>
+                    <li><a href="https://auto.protect.com/insurance/auto-insurance" target="_blank">Sub-Vertical Landing Page</a></li>
+                  </ul>
+                  <div><a href="https://auto.protect.com/" target="_blank" class="btn btn-s">View site</a></div>
+                </div>
+              </div>
+            </li>
+
+            <li data-groups="[&quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-2" class="works-item-link"><span class="works-item-thumb"><img src="images/clocker.png" width="250" height="250" alt="Clocker"></span></a>
+              <div id="works-item-details-2" class="popup mfp-hide">
                 <figure><img src="images/clocker-wide.png" class="modal-image" alt="Clocker"></figure>
                 <div class="popup-inner">
                   <h3>Clocker, an e-commerce Store, built with NodeJS and MongoDB</h3>
-                  <p>Clocker is an E-Commerce Store built from scratch using an MVC (Model, View, Controller) architecture.</p>
+                  <p>Clocker is personal project, an E-Commerce Store built from scratch using an MVC (Model, View, Controller) architecture.</p>
                   <p>The store is built with NodeJS and ExpressJS on the back-end, the EJS templating language for rendering dynamic html and a MongoDB database.</p>
                   <p>Some of the key features of this project include:</p>
                   <ul>
@@ -178,12 +208,74 @@
               </div>
             </li>
 
-            <li data-groups="[&quot;reactjs&quot;, &quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-2" class="works-item-link"><span class="works-item-thumb"><img src="images/postbook-logo.png" width="250" height="250" alt="Postbook"></span></a>
-              <div id="works-item-details-2" class="popup mfp-hide">
+            <li data-groups="[&quot;vuejs&quot;]" class="works-item"><a href="#works-item-details-3" class="works-item-link"><span class="works-item-thumb"><img src="images/charityguide.png" width="250" height="250" alt="Charity Guide"></span></a>
+              <div id="works-item-details-3" class="popup mfp-hide">
+                <figure><img src="images/charityguide-wide.jpeg" class="modal-image" alt="Charity Guide"></figure>
+                <div class="popup-inner">
+                  <h3>CharityGuide.com, a charity guide website, built with VueJS</h3>
+                  <p>CharityGuide.com is a charity guide website I built with my team in <a href="https://digitalmediasolutions.com/" target="_blank">Digital Media Solutions</a>. This site is meant to help people find their next favorite charities! It contains a lead acquisition flow to attain the lead's interests and contact information in order to send them personalized recommendations on charities they can donate to, it also contains a click feed.</p>
+                  <p>Some of the key features of this project include:</p>
+                  <ul>
+                    <li>A complete website with a homepage, compliance pages (Privacy, Terms, etc.), a lead acquisition flow and a few click feeds
+                      .</li>
+                    <li>A lead acquisition flow to attain the lead's interests and contact information. Flow has personalized input fields, navigation and progress widgets.</li>
+                    <li>A click feed page</li>
+                    <li>Site is fully responsive and implements a beautiful modern design.</li>
+                  </ul>
+                  <p>Notable pages:</p>
+                  <ul>
+                    <li><a href="https://charityguide.com/" target="_blank">Homepage</a></li>
+                    <li><a href="https://charityguide.com/lp/1" target="_blank">Lead Acquisition Flow Page</a></li>
+                    <li><a href="https://charityguide.com/donate/" target="_blank">Click Feed Page</a></li>
+                  </ul>
+                  <div><a href="https://charityguide.com/" target="_blank" class="btn btn-s">View site</a></div>
+                </div>
+              </div>
+            </li>
+
+            <li data-groups="[&quot;reactjs&quot;]" class="works-item"><a href="#works-item-details-4" class="works-item-link"><span class="works-item-thumb"><img src="images/MovieNight.png" width="250" height="250" alt="Movie Night"></span></a>
+              <div id="works-item-details-4" class="popup mfp-hide">
+                <figure><img src="images/movienight-wide.png" class="modal-image" alt="Movie Night"></figure>
+                <div class="popup-inner">
+                  <h3>Movie Night, a web application, built with ReactJS</h3>
+                  <p>Movie Night uses The Movie DB API to let you browse through your favorite movies and tv shows and find something to watch!</p>
+                  <p>The Web App includes a movies section, a tv shows section, a page for visualizing the information of a given movie or show as well as a search functionality.</p>
+                  <div><a href="https://danielmarchan.github.io/MovieNight/" target="_blank" class="btn btn-s">View site</a><a href="https://github.com/Danielmarchan/MovieNight" target="_blank" class="btn btn-s">View Code</a></div>
+                </div>
+              </div>
+            </li>
+
+            <li data-groups="[&quot;vuejs&quot;]" class="works-item"><a href="#works-item-details-5" class="works-item-link"><span class="works-item-thumb"><img src="images/getthejob.png" width="250" height="250" alt="Get The Job"></span></a>
+              <div id="works-item-details-5" class="popup mfp-hide">
+                <figure><img src="images/getthejob-wide.jpeg" class="modal-image" alt="Get The Job"></figure>
+                <div class="popup-inner">
+                  <h3>GetTheJob.com, a job search website, built with VueJS</h3>
+                  <p>GetTheJob.com is a job search website I built with my team in <a href="https://digitalmediasolutions.com/" target="_blank">Digital Media Solutions</a>. This site is meant to help people find their next career opportunity. It contains a blog with helpful articles related to career advice and a job feed page where users can find thousands of open positions in their area.</p>
+                  <p>Some of the key features of this project include:</p>
+                  <ul>
+                    <li>A complete website with a homepage, compliance pages (Privacy, Terms, etc.), a jobs feed and a blog.</li>
+                    <li>A blog feed with search functionality and pagination.</li>
+                    <li>A jobs feed page with search functionality</li>
+                    <li>Site is fully responsive and implements a beautiful modern design.</li>
+                  </ul>
+                  <p>Notable pages:</p>
+                  <ul>
+                    <li><a href="https://getthejob.com/" target="_blank">Homepage</a></li>
+                    <li><a href="https://getthejob.com/blog/feed" target="_blank">Articles Feed</a></li>
+                    <li><a href="https://getthejob.com/blog/article/career-spotlight-working-call-center-agent" target="_blank">Article Page</a></li>
+                    <li><a href="https://getthejob.com/jobs" target="_blank">Joobs Feed Page</a></li>
+                  </ul>
+                  <div><a href="https://getthejob.com/" target="_blank" class="btn btn-s">View site</a></div>
+                </div>
+              </div>
+            </li>
+
+            <li data-groups="[&quot;reactjs&quot;, &quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-6" class="works-item-link"><span class="works-item-thumb"><img src="images/postbook-logo.png" width="250" height="250" alt="Postbook"></span></a>
+              <div id="works-item-details-6" class="popup mfp-hide">
                 <figure><img src="images/postbook.png" class="modal-image" alt="Postbook"></figure>
                 <div class="popup-inner">
                   <h3>Postbook, a social media web application, built with ReactJS, NodeJS and MongoDB</h3>
-                  <p>Postbook is a social media web application that emulates the functionality of facebook and twitter.</p>
+                  <p>Postbook is personal project, a social media web application that emulates the functionality of facebook and twitter.</p>
                   <p>The web app consists of a front-end single page application built with ReactJS that communicates with a MongoDB database through a REST API built with NodeJS and ExpressJS.</p>
                   <p>Some of the key features of this project include:</p>
                   <ul>
@@ -201,18 +293,6 @@
                   <div><a href="https://danielmarchan.github.io/Postbook/" target="_blank" class="btn btn-s">View site</a>
                   <a href="https://github.com/Danielmarchan/Postbook" target="_blank" class="btn btn-s">View Front-End App Code</a>
                   <a href="https://github.com/Danielmarchan/Postbook-API" target="_blank" class="btn btn-s">View API Code</a></div>
-                </div>
-              </div>
-            </li>
-
-            <li data-groups="[&quot;reactjs&quot;]" class="works-item"><a href="#works-item-details-3" class="works-item-link"><span class="works-item-thumb"><img src="images/MovieNight.png" width="250" height="250" alt="Movie Night"></span></a>
-              <div id="works-item-details-3" class="popup mfp-hide">
-                <figure><img src="images/movienight-wide.png" class="modal-image" alt="Movie Night"></figure>
-                <div class="popup-inner">
-                  <h3>Movie Night, a web application, built with ReactJS</h3>
-                  <p>Movie Night uses The Movie DB API to let you browse through your favorite movies and tv shows and find something to watch!</p>
-                  <p>The Web App includes a movies section, a tv shows section, a page for visualizing the information of a given movie or show as well as a search functionality.</p>
-                  <div><a href="https://danielmarchan.github.io/MovieNight/" target="_blank" class="btn btn-s">View site</a><a href="https://github.com/Danielmarchan/MovieNight" target="_blank" class="btn btn-s">View Code</a></div>
                 </div>
               </div>
             </li>
@@ -297,8 +377,8 @@
     </section>
     <!-- END SKILLS SECTION-->
 
-    <!-- BEGIN EDUCATION SECTION-->
-    <section id="expirience" class="section">
+    <!-- BEGIN experience SECTION-->
+    <section id="experience" class="section">
       <div class="section-inner">
 
         <div class="container">
@@ -308,12 +388,32 @@
             <div class="separator"></div>
           </header>
 
-          <div class="expirience">
+          <div class="experience">
 
-            <div class="expirience-item">
+            <div class="experience-item">
               <div class="icon-b wow bounceIn"><i class="fas fa-briefcase"></i></div>
-              <div class="expirience-item-inner wow bounceInRight">
-                <div class="date">2019</div>
+              <div class="experience-item-inner wow bounceInRight">
+                <div class="date">2019 - Present</div>
+                <h3>Digital Media Solutions / Frontend Developer</h3>
+
+                <p>Co-create scalable web and mobile applications with other engineers.</p>
+                <p>Collaborate with the product & design team to create new features, tools, and improve functionality and user-experience.</p>
+                <p>Lead direction of front-end engineering and application user-interface design.</p>
+                <p>Develop APIs with PHP (Symfony) and NodeJS (Express)</p>
+                <p>Investigate, fix, and proactively avoid defects.</p>
+                <p>Contribute to Scrum activities within the team.</p>
+                <p>Provide code review, feedback, and mentoring for other JavaScript developers.</p>
+                <p>Collaborate with other developers on solutions, integration points, API contracts, etc.</p>
+                <p>Collaborate with product analysts and designers on UX and overall solutions.</p>
+                <p>Collaborate with QA testers on end-to-end testing coverage of work.</p>
+
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="icon-b wow bounceIn"><i class="fas fa-briefcase"></i></div>
+              <div class="experience-item-inner wow bounceInRight">
+                <div class="date">2018 - 2019</div>
                 <h3>SAMA Labs - Full Service Digital Marketing Lab / Web Developer</h3>
 
                 <p>Design, Code, Expand and Maintain a variety of Websites with a focus on Lead Conversion and Tracking, as well as E-Commerce.</p>
@@ -330,9 +430,9 @@
               </div>
             </div>
 
-            <div class="expirience-item">
+            <div class="experience-item">
               <div class="icon-b wow bounceIn"><i class="fas fa-briefcase"></i></div>
-              <div class="expirience-item-inner wow bounceInRight">
+              <div class="experience-item-inner wow bounceInRight">
                 <div class="date">2017 - 2018</div>
                 <h3>Yaapas Enlaces Digitales / Product Developer</h3>
                 <p>Prototyped and Wireframed several web applications for a variety of clients.</p>
@@ -343,27 +443,57 @@
               </div>
             </div>
 
-            <div class="expirience-item">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- END experience SECTION-->
+
+    <!-- BEGIN EDUCATION SECTION-->
+    <section id="education" class="section section-bg-dark section-top-rise section-bottom-fall">
+      <div class="section-inner">
+
+        <div class="container">
+
+          <header class="heading">
+            <h2>Education</h2>
+            <div class="separator"></div>
+          </header>
+
+          <div class="experience">
+
+            <div class="experience-item">
               <div class="icon-b wow bounceIn"><i class="fas fa-graduation-cap"></i></div>
-              <div class="expirience-item-inner wow bounceInRight">
+              <div class="experience-item-inner wow bounceInRight">
+                <div class="date">2021 - 2024</div>
+                <h3>Florida International University / Bachelor of Business Administration - BBA</h3>
+                <p>A BBA in Information Systems (IS) provies a solid foundation in the design, use, and management of databases, enterprise systems, information security and telecommunications technology. The degree program provides the background needed to give informational support for decision-making through business analytics and to understand complex project management initiatives.</p>
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="icon-b wow bounceIn"><i class="fas fa-graduation-cap"></i></div>
+              <div class="experience-item-inner wow bounceInRight">
                 <div class="date">2019</div>
                 <h3>NodeJS - The Complete Guide (Udemy Online Course) / Student</h3>
                 <p>A complete guide to NodeJS development. This course taught me how to build modern, fast and scalable server-side web applications with NodeJS and databases like SQL or MongoDB. The course included: Parsing Requests & Sending Responses, Rendering HTML Dynamically (on the Server), Using Express.js, Working with Files and generating PDFs on the Server, File Up- and Download, Using the Model-View-Controller (MVC) Pattern, Using Node.js with SQL (MySQL) and Sequelize, Using Node.js with NoSQL (MongoDB) and Mongoose, Working with Sessions & Cookies, User Authentication and Authorization, Validating User Input, Building REST APIs and much more.</p>
               </div>
             </div>
 
-            <div class="expirience-item">
+            <div class="experience-item">
               <div class="icon-b wow bounceIn"><i class="fas fa-graduation-cap"></i></div>
-              <div class="expirience-item-inner wow bounceInRight">
+              <div class="experience-item-inner wow bounceInRight">
                 <div class="date">2018</div>
                 <h3>Codify Academy / Student</h3>
                 <p>Codify Academy is a part-time online coding bootcamp where I learned the fundamentals of front-end development, from HTML and CSS all the way to APIs and Javascript frameworks!</p>
               </div>
             </div>
 
-            <div class="expirience-item">
+            <div class="experience-item">
               <div class="icon-b wow bounceIn"><i class="fas fa-graduation-cap"></i></div>
-              <div class="expirience-item-inner wow bounceInLeft">
+              <div class="experience-item-inner wow bounceInLeft">
                 <div class="date">2018</div>
                 <h3>CS50x Harvard's Intro to Computer Science / Student</h3>
                 <p>An introduction to the intellectual enterprises of computer science and the art of programming. This course taught me the core principles of computing and programming, Here I learned programming in C, then quickly abstracted away to python and javascript.</p>
@@ -376,10 +506,10 @@
 
       </div>
     </section>
-    <!-- END EXPIRIENCE SECTION-->
+    <!-- END EDUCATION SECTION-->
 
     <!-- BEGIN TESTIMONIALS SECTION-->
-    <section id="testimonials" class="section section-bg-light section-top-rise section-bottom-fall">
+    <section id="testimonials" class="section section-bottom-rise">
       <div class="section-inner">
 
         <div class="container">
@@ -408,7 +538,7 @@
 
 
     <!-- BEGIN FOOTER-->
-    <section id="contacts" class="section section-bg-img section-bg-overlay section-top-fall">
+    <section id="contacts" class="section section-bg-img section-bg-overlay section-top-rise">
       <div class="bg"></div>
       <div class="section-inner">
 
