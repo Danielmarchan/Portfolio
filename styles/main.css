@@ -1544,6 +1544,10 @@ html[style*='margin-right'] .main-nav {
   background: #fff;
 }
 
+.section-bg-light .experience .experience-item .icon-b:before {
+  background: #eee;
+}
+
 .experience .experience-item .experience-item-inner {
   position: relative;
   padding: 28px 0 20px 60px;
