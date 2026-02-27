@@ -1581,7 +1581,7 @@ html[style*='margin-right'] .main-nav {
   padding: 0 50% 0 0;
 }
 
-.experience .experience-item:nth-child(2n) .experience-item-inner {
+.experience.education .experience-item:nth-child(2n) .experience-item-inner {
   padding-left: 0;
   padding-right: 60px;
   text-align: right;
