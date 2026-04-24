@@ -67,7 +67,7 @@
     <!-- END NAV-->
 
     <!-- BEGIN HEADER-->
-    <section id="intro" class="section section-bg-img section-bg-overlay section-bottom-rise">
+    <section id="intro" class="section section-bg-img section-bg-overlay section-bottom-fall">
       <div class="bg"></div>
       <div class="section-inner">
 
@@ -91,7 +91,7 @@
     <!-- END HEADER-->
 
     <!-- BEGIN ABOUT SECTION-->
-    <section id="about" class="section section-top-rise section-bottom-fall">
+    <section id="about" class="section section-top-fall section-bottom-rise">
       <div class="section-inner">
 
         <div class="container">
@@ -125,7 +125,7 @@
     <!-- END ABOUT SECTION-->
 
     <!-- BEGIN experience SECTION-->
-    <section id="experience" class="section section-bottom-rise section-top-fall section-bg-light">
+    <section id="experience" class="section section-bottom-fall section-top-rise section-bg-light">
       <div class="section-inner">
 
         <div class="container">
@@ -199,7 +199,7 @@
     <!-- END experience SECTION-->
 
     <!-- BEGIN SKILLS SECTION-->
-    <section id="skills" class="section section-bg-img section-bg-overlay section-top-rise section-bottom-fall">
+    <section id="skills" class="section section-bg-img section-bg-overlay section-top-fall section-bottom-rise">
     <div class="bg"></div>
 
       <div class="section-inner">
@@ -290,7 +290,7 @@
     <!-- END SKILLS SECTION-->
 
     <!-- BEGIN EDUCATION SECTION-->
-    <section id="education" class="section section-top-fall section-bottom-rise">
+    <section id="education" class="section section-bg-light section-top-rise section-bottom-fall">
       <div class="section-inner">
 
         <div class="container">
@@ -347,7 +347,7 @@
     <!-- END EDUCATION SECTION-->
 
     <!-- BEGIN LATEST WORk SECTION-->
-    <!-- <section id="projects" class="section section-bg-dark section-bottom-fall section-top-rise">
+    <section id="projects" class="section section-bottom-rise section-top-fall">
       <div class="section-inner">
 
         <div class="container">
@@ -357,44 +357,87 @@
             <div class="separator"></div>
           </header>
 
-          <ul class="filter">
+          <!-- <ul class="filter">
             <li data-group="all" class="active">All</li>
             <li data-group="vuejs">VueJS</li>
             <li data-group="reactjs">ReactJS</li>
             <li data-group="nodejs">NodeJs</li>
-          </ul>
+          </ul> -->
 
           <ul class="works">
-            <li data-groups="[&quot;vuejs&quot;]" class="works-item"><a href="#works-item-details-1" class="works-item-link"><span class="works-item-thumb"><img src="images/protect.png" width="250" height="250" alt="Protect"></span></a>
+            <li data-groups="[&quot;vuejs&quot;]" class="works-item"><a href="#works-item-details-1" class="works-item-link"><span class="works-item-thumb"><img src="images/datadrop-square.png" width="250" height="250" alt="Protect"></span></a>
               <div id="works-item-details-1" class="popup mfp-hide">
-                <figure><img src="images/protect-wide.jpeg" class="modal-image" alt="Protect"></figure>
+                <figure><img src="images/datadrop.png" class="modal-image" alt="Protect"></figure>
                 <div class="popup-inner">
-                  <h3>Protect.com, a multi-vertical content websites, built with VueJS</h3>
-                  <p>Protect.com is a multi-vertical website I built with my team in <a href="https://digitalmediasolutions.com/" target="_blank">Digital Media Solutions</a>. This site is meant to be a hub for people to find offers that would interest them in a variety of vertical such as insurance.</p>
-                  <p>The site was built using VueJS and contains a <a href="https://protect.com/articles/">blog</a> that integrates with a headless CMS that uses a GraphQL API to serve all of the articles with their respective content.</p>
-                  <p>Some of the key features of this project include:</p>
-                  <ul>
-                    <li>A complete website with a homepage, compliance pages (Privacy, Terms, etc.), landing pages, click feeds and a blog.</li>
-                    <li>A blog feed with search functionality and pagination.</li>
-                    <li>A "Mega Menu" style header menu.</li>
-                    <li>A blog that connects to a headless CMS using a GraphQL API (<a href="https://graphcms.com/">GraphCMS</a>)</li>
-                    <li>Site is fully responsive and implements a beautiful modern design.</li>
-                  </ul>
-                  <p>Notable pages:</p>
-                  <ul>
-                    <li><a href="https://protect.com/" target="_blank">Homepage</a></li>
-                    <li><a href="https://protect.com/articles/" target="_blank">Articles Feed</a></li>
-                    <li><a href="https://protect.com/article/cheaper-car-insurance-quotes" target="_blank">Article Page</a></li>
-                    <li><a href="https://protect.com/insurance/auto-insurance/results" target="_blank">Click Feed Offers Page</a></li>
-                    <li><a href="https://protect.com/insurance/" target="_blank">Vertical Landing Page</a></li>
-                    <li><a href="https://protect.com/insurance/auto-insurance" target="_blank">Sub-Vertical Landing Page</a></li>
-                  </ul>
-                  <div><a href="https://protect.com/" target="_blank" class="btn btn-s">View site</a></div>
+                  <article>
+                    <header>
+                      <h3>DataDrop Headless</h3>
+                      <p>
+                        A role-based data management platform where admins upload CSV datasets and
+                        share them with viewer users, who can then explore the data through tables
+                        and charts. Built as a pnpm + Turborepo monorepo with a React 19 + Vite
+                        frontend and an Express 5 + Drizzle ORM backend on PostgreSQL, with
+                        credential-based authentication via Better Auth. Deployed on Fly.io across
+                        two apps (API + web) behind nginx.
+                      </p>
+                    </header>
+
+                    <section>
+                      <h4>Tech stack</h4>
+                      <ul>
+                        <li><strong>Client:</strong> React 19, React Router 7, TanStack Query, Tailwind CSS v4, Vite</li>
+                        <li><strong>Server:</strong> Express 5, Drizzle ORM, Better Auth, Zod</li>
+                        <li><strong>Database:</strong> PostgreSQL 16</li>
+                        <li><strong>Infra:</strong> pnpm workspaces, Turborepo, Docker, Fly.io</li>
+                      </ul>
+                    </section>
+
+                    <section>
+                      <h4>Try the demo</h4>
+                      <p>
+                        Open <a href="https://www.datadrop-app.com">www.datadrop-app.com</a> and sign
+                        in with one of the accounts below. Both demo users share the same password:
+                        <code>DataDropPass123</code>.
+                      </p>
+
+                      <h5>Admin &mdash; <code>demo-admin-user-01@email.com</code></h5>
+                      <p>Signs in with full access to the admin surface. Things to try:</p>
+                      <ul>
+                        <li>Go to <strong>Users</strong> to browse, create, and edit users (admin or viewer).</li>
+                        <li>Go to <strong>Datasets</strong> to see the seeded <em>eCommerce Store Performance</em> dataset, then open its <strong>Uploads</strong> page to upload a CSV and assign the dataset to viewer users.</li>
+                        <li>Switch over to the viewer surface to see how the data looks to the people you just granted access to.</li>
+                      </ul>
+
+                      <h6>Sample CSVs</h6>
+                      <p>Download any of these to upload from the admin <strong>Uploads</strong> page:</p>
+                      <ul>
+                        <li><a href="https://www.datadrop-app.com/orders.csv">orders.csv</a> &mdash; baseline valid dataset</li>
+                        <li><a href="https://www.datadrop-app.com/orders-variant-1.csv">orders-variant-1.csv</a></li>
+                        <li><a href="https://www.datadrop-app.com/orders-variant-2.csv">orders-variant-2.csv</a></li>
+                        <li><a href="https://www.datadrop-app.com/orders-variant-3.csv">orders-variant-3.csv</a></li>
+                        <li><a href="https://www.datadrop-app.com/orders-variant-4.csv">orders-variant-4.csv</a></li>
+                        <li><a href="https://www.datadrop-app.com/orders-variant-5.csv">orders-variant-5.csv</a></li>
+                        <li><a href="https://www.datadrop-app.com/orders-invalid.csv">orders-invalid.csv</a> &mdash; intentionally malformed, to see validation errors</li>
+                      </ul>
+
+                      <h5>Viewer &mdash; <code>demo-viewer-user-01@email.com</code></h5>
+                      <p>Signs in with read-only access to datasets assigned to them. Things to try:</p>
+                      <ul>
+                        <li>Go to <strong>Datasets</strong> to see the datasets the admin has shared.</li>
+                        <li>Open a dataset to browse rows with pagination.</li>
+                        <li>Open the <strong>Charts</strong> view for a dataset to visualize uploaded data.</li>
+                      </ul>
+                    </section>
+                    <ul>
+                      <li><a href="https://www.datadrop-app.com/" target="_blank">Website URL</a></li>
+                      <li><a href="https://github.com/Danielmarchan/data-drop-headless" target="_blank">Github URL</a></li>
+                    </ul>
+                  </article>
                 </div>
               </div>
             </li>
 
-            <li data-groups="[&quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-2" class="works-item-link"><span class="works-item-thumb"><img src="images/clocker.png" width="250" height="250" alt="Clocker"></span></a>
+            <!-- <li data-groups="[&quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-2" class="works-item-link"><span class="works-item-thumb"><img src="images/clocker.png" width="250" height="250" alt="Clocker"></span></a>
               <div id="works-item-details-2" class="popup mfp-hide">
                 <figure><img src="images/clocker-wide.png" class="modal-image" alt="Clocker"></figure>
                 <div class="popup-inner">
@@ -464,18 +507,18 @@
                   <div><a href="https://danielmarchan.github.io/MovieNight/" target="_blank" class="btn btn-s">View site</a><a href="https://github.com/Danielmarchan/MovieNight" target="_blank" class="btn btn-s">View Code</a></div>
                 </div>
               </div>
-            </li>
+            </li> -->
 
           </ul>
 
         </div>
 
       </div>
-    </section> -->
+    </section>
     <!-- END PROJECTS SECTION-->
 
     <!-- BEGIN TESTIMONIALS SECTION-->
-    <section id="testimonials" class="section section-bg-light section-top-rise section-bottom-fall">
+    <section id="testimonials" class="section section-bg-dark section-top-rise section-bottom-fall">
       <div class="section-inner">
 
         <div class="container">
