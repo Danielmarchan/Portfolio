@@ -124,8 +124,105 @@
     </section>
     <!-- END ABOUT SECTION-->
 
+    <!-- BEGIN LATEST WORk SECTION-->
+    <section id="projects" class="section section-bg-light section-top-rise section-bottom-fall">
+      <div class="section-inner">
+
+        <div class="container">
+
+          <header class="heading">
+            <h2>Check Out Some Of My Work</h2>
+            <div class="separator"></div>
+          </header>
+
+          <!-- <ul class="filter">
+            <li data-group="all" class="active">All</li>
+            <li data-group="reactjs">ReactJS</li>
+            <li data-group="nodejs">NodeJs</li>
+          </ul> -->
+
+          <ul class="works">
+            <li data-groups="[&quot;reactjs&quot;, &quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-1" class="works-item-link"><span class="works-item-thumb"><img src="images/datadrop-square.png" width="250" height="250" alt="Protect"></span></a>
+              <div id="works-item-details-1" class="popup mfp-hide">
+                <figure><img src="images/datadrop.png" class="modal-image" alt="Protect"></figure>
+                <div class="popup-inner">
+                  <article>
+                    <header>
+                      <h3>DataDrop Headless</h3>
+                      <p>
+                        A role-based data management platform where admins upload CSV datasets and
+                        share them with viewer users, who can then explore the data through tables
+                        and charts. Built as a pnpm + Turborepo monorepo with a React 19 + Vite
+                        frontend and an Express 5 + Drizzle ORM backend on PostgreSQL, with
+                        credential-based authentication via Better Auth. Deployed on Fly.io across
+                        two apps (API + web) behind nginx.
+                      </p>
+                    </header>
+
+                    <section>
+                      <h4>Tech stack</h4>
+                      <ul>
+                        <li><strong>Client:</strong> React 19, React Router 7, TanStack Query, Tailwind CSS v4, Vite</li>
+                        <li><strong>Server:</strong> Express 5, Drizzle ORM, Better Auth, Zod</li>
+                        <li><strong>Database:</strong> PostgreSQL 16</li>
+                        <li><strong>Infra:</strong> pnpm workspaces, Turborepo, Docker, Fly.io</li>
+                      </ul>
+                    </section>
+
+                    <section>
+                      <h4>Try the demo</h4>
+                      <p>
+                        Open <a href="https://www.datadrop-app.com">www.datadrop-app.com</a> and sign
+                        in with one of the accounts below. Both demo users share the same password:
+                        <code>DataDropPass123</code>.
+                      </p>
+
+                      <h5>Admin &mdash; <code>demo-admin-user-01@email.com</code></h5>
+                      <p>Signs in with full access to the admin surface. Things to try:</p>
+                      <ul>
+                        <li>Go to <strong>Users</strong> to browse, create, and edit users (admin or viewer).</li>
+                        <li>Go to <strong>Datasets</strong> to see the seeded <em>eCommerce Store Performance</em> dataset, then open its <strong>Uploads</strong> page to upload a CSV and assign the dataset to viewer users.</li>
+                        <li>Switch over to the viewer surface to see how the data looks to the people you just granted access to.</li>
+                      </ul>
+
+                      <h6>Sample CSVs</h6>
+                      <p>Download any of these to upload from the admin <strong>Uploads</strong> page:</p>
+                      <ul>
+                        <li><a href="https://www.datadrop-app.com/orders.csv">orders.csv</a> &mdash; baseline valid dataset</li>
+                        <li><a href="https://www.datadrop-app.com/orders-variant-1.csv">orders-variant-1.csv</a></li>
+                        <li><a href="https://www.datadrop-app.com/orders-variant-2.csv">orders-variant-2.csv</a></li>
+                        <li><a href="https://www.datadrop-app.com/orders-variant-3.csv">orders-variant-3.csv</a></li>
+                        <li><a href="https://www.datadrop-app.com/orders-variant-4.csv">orders-variant-4.csv</a></li>
+                        <li><a href="https://www.datadrop-app.com/orders-variant-5.csv">orders-variant-5.csv</a></li>
+                        <li><a href="https://www.datadrop-app.com/orders-invalid.csv">orders-invalid.csv</a> &mdash; intentionally malformed, to see validation errors</li>
+                      </ul>
+
+                      <h5>Viewer &mdash; <code>demo-viewer-user-01@email.com</code></h5>
+                      <p>Signs in with read-only access to datasets assigned to them. Things to try:</p>
+                      <ul>
+                        <li>Go to <strong>Datasets</strong> to see the datasets the admin has shared.</li>
+                        <li>Open a dataset to browse rows with pagination.</li>
+                        <li>Open the <strong>Charts</strong> view for a dataset to visualize uploaded data.</li>
+                      </ul>
+                    </section>
+                    <ul>
+                      <li><a href="https://www.datadrop-app.com/" target="_blank">Website URL</a></li>
+                      <li><a href="https://github.com/Danielmarchan/data-drop-headless" target="_blank">Github URL</a></li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- END PROJECTS SECTION-->
+
     <!-- BEGIN experience SECTION-->
-    <section id="experience" class="section section-bottom-fall section-top-rise section-bg-light">
+    <section id="experience" class="section section-top-fall section-bottom-rise">
       <div class="section-inner">
 
         <div class="container">
@@ -199,7 +296,7 @@
     <!-- END experience SECTION-->
 
     <!-- BEGIN SKILLS SECTION-->
-    <section id="skills" class="section section-bg-img section-bg-overlay section-top-fall section-bottom-rise">
+    <section id="skills" class="section section-bg-img section-bg-overlay section-top-rise section-bottom-fall">
     <div class="bg"></div>
 
       <div class="section-inner">
@@ -210,7 +307,7 @@
             <div class="col span_8">
               <h2>My skills</h2>
               <div class="separator l"></div>
-              <p>I’ve taught myself everything I know when it comes to Software Engineering. I started out working at a marketing agency, building WordPress/Shopify storefronts as well as landing pages with a focus on web performance, accessibility, analytics, and conversion attribution. I quickly moved on toa more established software company, still in the marketing space, called Digital Media Solutions, where I worked extensively building high-performance lead-generation workflows in close collaboration with design and product teams. After some years, I transitioned to my current role at RubiconMD, where I build secure, reliable features in a highly regulated healthcare environment.</p>
+              <p>I've taught myself everything I know when it comes to Software Engineering. I started out working at a marketing agency, building WordPress/Shopify storefronts as well as landing pages with a focus on web performance, accessibility, analytics, and conversion attribution. I quickly moved on toa more established software company, still in the marketing space, called Digital Media Solutions, where I worked extensively building high-performance lead-generation workflows in close collaboration with design and product teams. After some years, I transitioned to my current role at RubiconMD, where I build secure, reliable features in a highly regulated healthcare environment.</p>
               <p><strong>Programming Languages:</strong> TypeScript, JavaScript, Ruby, PHP</p>
               <p><strong>Technologies & Tools:</strong> React, Node.js, Angular, React Native, Ruby on Rails, Vue, Nx Monorepos, Storybook, Jest, Cypress, REST, GraphQL, Apollo, HTML5, CSS/Sass, Webpack/Vite, Git, CI/CD, Docker, PostgreSQL, AWS</p>
               <p><strong>Methodologies:</strong> SCRUM, Agile</p>
@@ -290,7 +387,7 @@
     <!-- END SKILLS SECTION-->
 
     <!-- BEGIN EDUCATION SECTION-->
-    <section id="education" class="section section-bg-light section-top-rise section-bottom-fall">
+    <section id="education" class="section section-bg-light section-top-fall section-bottom-rise">
       <div class="section-inner">
 
         <div class="container">
@@ -346,177 +443,6 @@
     </section>
     <!-- END EDUCATION SECTION-->
 
-    <!-- BEGIN LATEST WORk SECTION-->
-    <section id="projects" class="section section-bottom-rise section-top-fall">
-      <div class="section-inner">
-
-        <div class="container">
-
-          <header class="heading">
-            <h2>Check Out Some Of My Work</h2>
-            <div class="separator"></div>
-          </header>
-
-          <!-- <ul class="filter">
-            <li data-group="all" class="active">All</li>
-            <li data-group="vuejs">VueJS</li>
-            <li data-group="reactjs">ReactJS</li>
-            <li data-group="nodejs">NodeJs</li>
-          </ul> -->
-
-          <ul class="works">
-            <li data-groups="[&quot;vuejs&quot;]" class="works-item"><a href="#works-item-details-1" class="works-item-link"><span class="works-item-thumb"><img src="images/datadrop-square.png" width="250" height="250" alt="Protect"></span></a>
-              <div id="works-item-details-1" class="popup mfp-hide">
-                <figure><img src="images/datadrop.png" class="modal-image" alt="Protect"></figure>
-                <div class="popup-inner">
-                  <article>
-                    <header>
-                      <h3>DataDrop Headless</h3>
-                      <p>
-                        A role-based data management platform where admins upload CSV datasets and
-                        share them with viewer users, who can then explore the data through tables
-                        and charts. Built as a pnpm + Turborepo monorepo with a React 19 + Vite
-                        frontend and an Express 5 + Drizzle ORM backend on PostgreSQL, with
-                        credential-based authentication via Better Auth. Deployed on Fly.io across
-                        two apps (API + web) behind nginx.
-                      </p>
-                    </header>
-
-                    <section>
-                      <h4>Tech stack</h4>
-                      <ul>
-                        <li><strong>Client:</strong> React 19, React Router 7, TanStack Query, Tailwind CSS v4, Vite</li>
-                        <li><strong>Server:</strong> Express 5, Drizzle ORM, Better Auth, Zod</li>
-                        <li><strong>Database:</strong> PostgreSQL 16</li>
-                        <li><strong>Infra:</strong> pnpm workspaces, Turborepo, Docker, Fly.io</li>
-                      </ul>
-                    </section>
-
-                    <section>
-                      <h4>Try the demo</h4>
-                      <p>
-                        Open <a href="https://www.datadrop-app.com">www.datadrop-app.com</a> and sign
-                        in with one of the accounts below. Both demo users share the same password:
-                        <code>DataDropPass123</code>.
-                      </p>
-
-                      <h5>Admin &mdash; <code>demo-admin-user-01@email.com</code></h5>
-                      <p>Signs in with full access to the admin surface. Things to try:</p>
-                      <ul>
-                        <li>Go to <strong>Users</strong> to browse, create, and edit users (admin or viewer).</li>
-                        <li>Go to <strong>Datasets</strong> to see the seeded <em>eCommerce Store Performance</em> dataset, then open its <strong>Uploads</strong> page to upload a CSV and assign the dataset to viewer users.</li>
-                        <li>Switch over to the viewer surface to see how the data looks to the people you just granted access to.</li>
-                      </ul>
-
-                      <h6>Sample CSVs</h6>
-                      <p>Download any of these to upload from the admin <strong>Uploads</strong> page:</p>
-                      <ul>
-                        <li><a href="https://www.datadrop-app.com/orders.csv">orders.csv</a> &mdash; baseline valid dataset</li>
-                        <li><a href="https://www.datadrop-app.com/orders-variant-1.csv">orders-variant-1.csv</a></li>
-                        <li><a href="https://www.datadrop-app.com/orders-variant-2.csv">orders-variant-2.csv</a></li>
-                        <li><a href="https://www.datadrop-app.com/orders-variant-3.csv">orders-variant-3.csv</a></li>
-                        <li><a href="https://www.datadrop-app.com/orders-variant-4.csv">orders-variant-4.csv</a></li>
-                        <li><a href="https://www.datadrop-app.com/orders-variant-5.csv">orders-variant-5.csv</a></li>
-                        <li><a href="https://www.datadrop-app.com/orders-invalid.csv">orders-invalid.csv</a> &mdash; intentionally malformed, to see validation errors</li>
-                      </ul>
-
-                      <h5>Viewer &mdash; <code>demo-viewer-user-01@email.com</code></h5>
-                      <p>Signs in with read-only access to datasets assigned to them. Things to try:</p>
-                      <ul>
-                        <li>Go to <strong>Datasets</strong> to see the datasets the admin has shared.</li>
-                        <li>Open a dataset to browse rows with pagination.</li>
-                        <li>Open the <strong>Charts</strong> view for a dataset to visualize uploaded data.</li>
-                      </ul>
-                    </section>
-                    <ul>
-                      <li><a href="https://www.datadrop-app.com/" target="_blank">Website URL</a></li>
-                      <li><a href="https://github.com/Danielmarchan/data-drop-headless" target="_blank">Github URL</a></li>
-                    </ul>
-                  </article>
-                </div>
-              </div>
-            </li>
-
-            <!-- <li data-groups="[&quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-2" class="works-item-link"><span class="works-item-thumb"><img src="images/clocker.png" width="250" height="250" alt="Clocker"></span></a>
-              <div id="works-item-details-2" class="popup mfp-hide">
-                <figure><img src="images/clocker-wide.png" class="modal-image" alt="Clocker"></figure>
-                <div class="popup-inner">
-                  <h3>Clocker, an e-commerce Store, built with NodeJS and MongoDB</h3>
-                  <p>Clocker is personal project, an E-Commerce Store built from scratch using an MVC (Model, View, Controller) architecture.</p>
-                  <p>The store is built with NodeJS and ExpressJS on the back-end, the EJS templating language for rendering dynamic html and a MongoDB database.</p>
-                  <p>Some of the key features of this project include:</p>
-                  <ul>
-                    <li>A complete storefront with a homepage, shop page, product page, cart page and order history page where customers can shop for beautiful watches.</li>
-                    <li>A simple admin panel where admin users can create and edit products and collections as well as managing user roles.</li>
-                    <li>File Up- and Download</li>
-                    <li>Generating PDF documents on the fly (invoices).</li>
-                    <li>Using Authentication via sessions and cookies</li>
-                    <li>User Authorization</li>
-                    <li>Sending Emails via SendGrid</li>
-                    <li>Input Validation</li>
-                    <li>Data Pagination</li>
-                    <li>Payment Handling with Stripe (Payments don't actually go through because a test API key is being purposefully used)</li>
-                  </ul>
-                  <p>Customer login:</p>
-                  <ul>
-                    <li>email: user@email.com</li>
-                    <li>password: password</li>
-                  </ul>
-                  <p>Admin login:</p>
-                  <ul>
-                    <li>email: user@admin.com</li>
-                    <li>password: password</li>
-                  </ul>
-                  <div><a href="https://shopclocker.herokuapp.com/" target="_blank" class="btn btn-s">View site</a><a href="https://github.com/Danielmarchan/Clocker" target="_blank" class="btn btn-s">View Code</a></div>
-                </div>
-              </div>
-            </li>
-
-            <li data-groups="[&quot;vuejs&quot;]" class="works-item"><a href="#works-item-details-3" class="works-item-link"><span class="works-item-thumb"><img src="images/charityguide.png" width="250" height="250" alt="Charity Guide"></span></a>
-              <div id="works-item-details-3" class="popup mfp-hide">
-                <figure><img src="images/charityguide-wide.jpeg" class="modal-image" alt="Charity Guide"></figure>
-                <div class="popup-inner">
-                  <h3>CharityGuide.com, a charity guide website, built with VueJS</h3>
-                  <p>CharityGuide.com is a charity guide website I built with my team in <a href="https://digitalmediasolutions.com/" target="_blank">Digital Media Solutions</a>. This site is meant to help people find their next favorite charities! It contains a lead acquisition flow to attain the lead's interests and contact information in order to send them personalized recommendations on charities they can donate to, it also contains a click feed.</p>
-                  <p>Some of the key features of this project include:</p>
-                  <ul>
-                    <li>A complete website with a homepage, compliance pages (Privacy, Terms, etc.), a lead acquisition flow and a few click feeds
-                      .</li>
-                    <li>A lead acquisition flow to attain the lead's interests and contact information. Flow has personalized input fields, navigation and progress widgets.</li>
-                    <li>A click feed page</li>
-                    <li>Site is fully responsive and implements a beautiful modern design.</li>
-                  </ul>
-                  <p>Notable pages:</p>
-                  <ul>
-                    <li><a href="https://charityguide.com/" target="_blank">Homepage</a></li>
-                    <li><a href="https://charityguide.com/lp/1" target="_blank">Lead Acquisition Flow Page</a></li>
-                    <li><a href="https://charityguide.com/donate/" target="_blank">Click Feed Page</a></li>
-                  </ul>
-                  <div><a href="https://charityguide.com/" target="_blank" class="btn btn-s">View site</a></div>
-                </div>
-              </div>
-            </li>
-
-            <li data-groups="[&quot;reactjs&quot;]" class="works-item"><a href="#works-item-details-4" class="works-item-link"><span class="works-item-thumb"><img src="images/MovieNight.png" width="250" height="250" alt="Movie Night"></span></a>
-              <div id="works-item-details-4" class="popup mfp-hide">
-                <figure><img src="images/movienight-wide.png" class="modal-image" alt="Movie Night"></figure>
-                <div class="popup-inner">
-                  <h3>Movie Night, a web application, built with ReactJS</h3>
-                  <p>Movie Night uses The Movie DB API to let you browse through your favorite movies and tv shows and find something to watch!</p>
-                  <p>The Web App includes a movies section, a tv shows section, a page for visualizing the information of a given movie or show as well as a search functionality.</p>
-                  <div><a href="https://danielmarchan.github.io/MovieNight/" target="_blank" class="btn btn-s">View site</a><a href="https://github.com/Danielmarchan/MovieNight" target="_blank" class="btn btn-s">View Code</a></div>
-                </div>
-              </div>
-            </li> -->
-
-          </ul>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- END PROJECTS SECTION-->
-
     <!-- BEGIN TESTIMONIALS SECTION-->
     <section id="testimonials" class="section section-bg-dark section-top-rise section-bottom-fall">
       <div class="section-inner">
@@ -531,7 +457,7 @@
           <div class="testimonials">
             <div>
               <p>
-                Daniel has a unique aptitude for just about anything he puts his mind to. He picks up new and complex skills extraordinarily quickly, puts his all into his work product, and never gives up on a problem until finding a path to a solution. That said, he’s also very forthcoming when the need to ask for help arises! As a team member, he’s an inspiring and galvanizing force. As a an independent worker, I dare say he’s unmatched. With a polished professionalism and a purely positive attitude, his work ethic, high-level understanding, and collaborative spirit will make him an undeniable asset to any team or company lucky enough to have him!
+                Daniel has a unique aptitude for just about anything he puts his mind to. He picks up new and complex skills extraordinarily quickly, puts his all into his work product, and never gives up on a problem until finding a path to a solution. That said, he's also very forthcoming when the need to ask for help arises! As a team member, he's an inspiring and galvanizing force. As a an independent worker, I dare say he's unmatched. With a polished professionalism and a purely positive attitude, his work ethic, high-level understanding, and collaborative spirit will make him an undeniable asset to any team or company lucky enough to have him!
                 </p>
               <div class="author">Evan Winston / Codify Academy</div>
               <div class="site-photo"><img src="images/evan.jpeg" width="70" height="70" alt=""></div>
