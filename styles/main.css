@@ -3158,6 +3158,12 @@ svg#arrow-down {
     padding-bottom: 0;
 }
 
+.list-none {
+  list-style: none;
+  padding-left: 0;
+  opacity: 1;
+}
+
 @media (max-width: 767px) {
   svg#arrow-down {
       width: 35px;
