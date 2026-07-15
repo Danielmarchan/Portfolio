@@ -2861,6 +2861,9 @@ form .message {
   .animated-letters b {
     font-size: 1em;
   }
+  .experience.education .experience-item:nth-child(2n) .experience-item-inner {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 515px) {
