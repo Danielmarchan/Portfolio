@@ -142,7 +142,77 @@
           </ul> -->
 
           <ul class="works">
-            <li data-groups="[&quot;reactjs&quot;, &quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-1" class="works-item-link"><span class="works-item-thumb"><img src="images/datadrop-square.png" width="250" height="250" alt="Protect"></span></a>
+            <li data-groups="[&quot;reactjs&quot;, &quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-2" class="works-item-link"><span class="works-item-thumb"><img src="images/yieldscout.jpg" width="250" height="250" alt="YieldScout"></span></a>
+              <div id="works-item-details-2" class="popup mfp-hide">
+                <figure><img src="images/yieldscout-wide.png" class="modal-image" alt="YieldScout deal-discovery map"></figure>
+                <div class="popup-inner">
+                  <article>
+                    <header>
+                      <h3>YieldScout</h3>
+                      <p>
+                        A real-estate investor deal-discovery app that surfaces estimated cash flow
+                        directly on map markers and list rows, so investors can spot cash-flowing
+                        properties without scrolling listing portals. Built as a pnpm + Turborepo
+                        monorepo with a React SPA and a NestJS API that share a
+                        generated end-to-end tRPC type contract, backed by PostgreSQL and Drizzle ORM
+                        with Redis/BullMQ background workers and better-auth for authentication.
+                        Currently a private closed alpha.
+                      </p>
+                    </header>
+
+                    <section>
+                      <h4>Demo Video</h4>
+                      <div class="video-container">
+                        <video width="640" height="360" controls preload="metadata">
+                          <source src="files/yieldscout-demo.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </section>
+
+                    <section>
+                      <h4>Tech stack</h4>
+                      <ul>
+                        <li><strong>Client:</strong> React 19, TanStack Router, TanStack Query, Zustand, Base UI, Tailwind CSS v4, MapLibre, Vite</li>
+                        <li><strong>Server:</strong> NestJS 10, Express, nestjs-trpc, Drizzle ORM, Better Auth, Zod, neverthrow</li>
+                        <li><strong>Data:</strong> PostgreSQL, Redis + BullMQ</li>
+                        <li><strong>Infra:</strong> pnpm workspaces, Turborepo, Docker, Vitest</li>
+                      </ul>
+                    </section>
+
+                    <section>
+                      <h4>Design decisions</h4>
+                      <ul>
+                        <li>
+                          <strong>Vendor data is an evictable cache, not a system of record.</strong>
+                          Listing rows are shared between users and swept on a retention schedule, so
+                          saving a property copies a frozen snapshot rather than foreign-keying into
+                          the cache. Cache eviction can never touch user-owned data.
+                        </li>
+                        <li>
+                          <strong>Underwriting assumptions freeze at save.</strong>
+                          A saved property captures the user's financing and operating assumptions at
+                          the moment of saving, so its cash flow stays a stable artifact instead of
+                          silently re-pricing every time the search filters change.
+                        </li>
+                        <li>
+                          <strong>Enrichment progress streams over SSE.</strong>
+                          Rent estimation is slow and per-property, so metrics push to the client
+                          through a tRPC subscription as they resolve rather than blocking the
+                          initial map render.
+                        </li>
+                        <li>
+                          <strong>Every vendor sits behind a provider boundary.</strong>
+                          Persistence stays vendor-neutral so the data source can be swapped without
+                          touching domain logic.
+                        </li>
+                      </ul>
+                    </section>
+                  </article>
+                </div>
+              </div>
+            </li>
+            <li data-groups="[&quot;reactjs&quot;, &quot;nodejs&quot;]" class="works-item"><a href="#works-item-details-1" class="works-item-link"><span class="works-item-thumb"><img src="images/datadrop-squared.png" width="250" height="250" alt="DataDrop Headless"></span></a>
               <div id="works-item-details-1" class="popup mfp-hide">
                 <figure><img src="images/datadrop.png" class="modal-image" alt="Protect"></figure>
                 <div class="popup-inner">
@@ -160,7 +230,7 @@
                     </header>
 
                     <section>
-                      <h4>Screen Recording</h4>
+                      <h4>Demo Video</h4>
                       <div class="video-container">
                         <video width="640" height="360" controls>
                           <source src="files/datadrop-demo.mp4" type="video/mp4">
@@ -255,9 +325,10 @@
               <div class="icon-b wow bounceIn"><i class="fas fa-briefcase"></i></div>
               <div class="experience-item-inner wow bounceInRight">
                 <div class="date">2022 - Present</div>
-                <h3>RubiconMD / Software Engineer</h3>
+                <h3>RubiconMD (acquired by CVS Health, 2023) / Software Engineer</h3>
                 <ul>
                   <li>Rebuilt the UI of our core product that handles 10k+ users and 20k+ transactions per month, refactoring legacy code with SOLID principles and Design Patterns while meeting 99.9% uptime.</li>
+                  <li>Lead the onboarding of a new team of engineers into our platform, guiding them through the architecture of our application and our unique git workflows, all while delivering a business-critical feature with zero delays.</li>
                   <li>Implemented a feature flag system to hide in-progress features, enabling safe releases on mission-critical workflows, cutting the amount of reported bugs by 20%.</li>
                   <li>Shipped full-stack features spanning DB migrations, GraphQL resolvers, and UI workflows, cutting handoff delays while maintaining 80%+ unit-test coverage.</li>
                   <li>Owned feature delivery on a React Native application that consumed both a REST and a GraphQL API, and mentored other team members on best practices when working with this framework.</li>
@@ -292,7 +363,7 @@
             <div class="experience-item">
               <div class="icon-b wow bounceIn"><i class="fas fa-briefcase"></i></div>
               <div class="experience-item-inner wow bounceInRight">
-                <div class="date">2018 - 2019</div>
+                <div class="date">2019</div>
                 <h3>SAMA Labs - Full Service Digital Marketing Lab / Web Developer</h3>
 
                 <p>Building ecommerce storefronts and landing pages with a focus on web performance, accessibility, and conversions.</p>
@@ -324,11 +395,11 @@
             <div class="col span_8">
               <h2>My skills</h2>
               <div class="separator l"></div>
-              <p>I've taught myself everything I know when it comes to Software Engineering. I started out working at a marketing agency, building WordPress/Shopify storefronts as well as landing pages with a focus on web performance, accessibility, analytics, and conversion attribution. I quickly moved on toa more established software company, still in the marketing space, called Digital Media Solutions, where I worked extensively building high-performance lead-generation workflows in close collaboration with design and product teams. After some years, I transitioned to my current role at RubiconMD, where I build secure, reliable features in a highly regulated healthcare environment.</p>
+              <p>I've taught myself everything I know when it comes to Software Engineering. I started out working at a marketing agency, building WordPress/Shopify storefronts as well as landing pages with a focus on web performance, accessibility, analytics, and conversion attribution. I quickly moved on to a more established software company, still in the marketing space, called Digital Media Solutions, where I worked extensively building high-performance lead-generation workflows in close collaboration with design and product teams. After some years, I transitioned to my current role at RubiconMD, since acquired by CVS Health, where I build secure, reliable features in a highly regulated healthcare environment.</p>
               <p><strong>Programming Languages:</strong> TypeScript, JavaScript, Ruby, PHP</p>
-              <p><strong>Technologies & Tools:</strong> React, Node.js, Angular, React Native, Ruby on Rails, Vue, Nx Monorepos, Storybook, Jest, Cypress, REST, GraphQL, Apollo, HTML5, CSS/Sass, Webpack/Vite, Git, CI/CD, Docker, PostgreSQL, AWS</p>
-              <p><strong>Methodologies:</strong> SCRUM, Agile</p>
-              <p><strong>Interests:</strong> Design Systems, Web Performance, Software Architecture, Developer Experience (DX)</p>
+              <p><strong>Technologies & Tools:</strong> React, Node.js, NestJS, Express, Angular, React Native, Ruby on Rails, Vue, RxJS, Nx Monorepos, Turborepo, Storybook, Jest, Cypress, REST, GraphQL, Apollo, tRPC, HTML5, CSS/Sass, Webpack/Vite, Git, CI/CD, Docker, PostgreSQL, Drizzle ORM, Redis/BullMQ, AWS, Sentry, Datadog</p>
+              <p><strong>Methodologies:</strong> SCRUM, Agile, BDD</p>
+              <p><strong>Interests:</strong> Web Performance, Software Architecture, AI Tooling, Developer Experience (DX)</p>
 
             </div>
             <div class="col span_4">
